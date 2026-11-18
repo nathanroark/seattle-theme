@@ -1,0 +1,25 @@
+{
+  "base": "dark",
+  "name": "Seattle",
+  "overrides": {
+    "autoAccept": "#d7e1eb",
+    "bashBorder": "#d7e1eb",
+    "claude": "#8ca9c4",
+    "diffAdded": "#2a3a3e",
+    "diffAddedDimmed": "#1c252a",
+    "diffRemoved": "#442e3f",
+    "diffRemovedDimmed": "#2b222d",
+    "error": "#ce75a1",
+    "inactive": "#727891",
+    "permission": "#a6caeb",
+    "planMode": "#b2bbc4",
+    "promptBorder": "#4f536d",
+    "subtle": "#4f536d",
+    "success": "#76d0c1",
+    "suggestion": "#a6caeb",
+    "syntax.keyword": "#8ca9c4",
+    "syntax.string": "#76d0c1",
+    "text": "#9da2bd",
+    "warning": "#efebbc"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "final_space": true,
+  "console_title_template": "{{ if .Root }}\u26a1 {{ end }}{{ .UserName }} \u279c {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#4f536d",
+          "template": "\u256d\u2500 "
+        },
+        {
+          "type": "session",
+          "style": "diamond",
+          "background": "#8ca9c4",
+          "foreground": "#0c0e15",
+          "background_templates": [
+            "{{ if .Root }}#ce75a1{{ end }}"
+          ],
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "template": "{{ if .Root }}\uf0e7{{ else }}\uf007{{ end }} {{ .UserName }}"
+        },
+        {
+          "type": "path",
+          "style": "diamond",
+          "foreground": "#0c0e15",
+          "options": {
+            "folder_separator_icon": " / ",
+            "max_depth": 2,
+            "style": "agnoster_short"
+          },
+          "template": "\uf07c {{ .Path }}",
+          "background": "#a6caeb",
+          "leading_diamond": " \ue0b6",
+          "trailing_diamond": "\ue0b4"
+        },
+        {
+          "type": "git",
+          "style": "diamond",
+          "background": "#76d0c1",
+          "foreground": "#0c0e15",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#efebbc{{ end }}",
+            "{{ if gt .Behind 0 }}#e188b5{{ end }}",
+            "{{ if gt .Ahead 0 }}#89ceec{{ end }}"
+          ],
+          "leading_diamond": " \ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "options": {
+            "branch_icon": "\ue0a0 ",
+            "fetch_status": true
+          },
+          "template": "{{ .HEAD }}{{ if or .Working.Changed .Staging.Changed }} \u00b1{{ add .Working.Added .Working.Modified .Working.Deleted .Working.Untracked .Working.Unmerged .Staging.Added .Staging.Modified .Staging.Deleted .Staging.Untracked .Staging.Unmerged }}{{ end }}"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#d7e1eb",
+          "template": "\u2570\u2500"
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "#d7e1eb",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ce75a1{{ end }}"
+          ],
+          "options": {
+            "always_enabled": true
+          },
+          "template": "\u276f"
+        }
+      ]
+    }
+  ]
+}

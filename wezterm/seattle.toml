@@ -1,0 +1,16 @@
+[colors]
+foreground = "#9da2bd"
+background = "#13161e"
+cursor_bg = "#76d0c1"
+cursor_fg = "#0c0e15"
+cursor_border = "#76d0c1"
+selection_fg = "#d7e1eb"
+selection_bg = "#2c3144"
+compose_cursor = "#76d0c1"
+scrollbar_thumb = "#4f536d"
+split = "#282b37"
+ansi = ["#323644", "#ce75a1", "#76d0c1", "#efebbc", "#89ceec", "#e188b5", "#a6caeb", "#d7e1eb"]
+brights = ["#727891", "#dc94b7", "#96ded0", "#f5f2cd", "#a5dcf3", "#eba4c7", "#bcd8f3", "#f0f0f0"]
+
+[metadata]
+name = "Seattle"
