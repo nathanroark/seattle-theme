@@ -189,10 +189,10 @@
 	<key>Link Color</key>
 	<dict>
 		<key>Alpha Component</key><real>1</real>
-		<key>Blue Component</key><real>0.921569</real>
+		<key>Blue Component</key><real>0.925490</real>
 		<key>Color Space</key><string>sRGB</string>
-		<key>Green Component</key><real>0.792157</real>
-		<key>Red Component</key><real>0.650980</real>
+		<key>Green Component</key><real>0.807843</real>
+		<key>Red Component</key><real>0.537255</real>
 	</dict>
 	<key>Badge Color</key>
 	<dict>
