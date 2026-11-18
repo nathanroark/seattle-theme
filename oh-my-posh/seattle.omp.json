@@ -18,7 +18,7 @@
           "type": "session",
           "style": "diamond",
           "background": "#8ca9c4",
-          "foreground": "#0c0e15",
+          "foreground": "#08090c",
           "background_templates": [
             "{{ if .Root }}#ce75a1{{ end }}"
           ],
@@ -29,7 +29,7 @@
         {
           "type": "path",
           "style": "diamond",
-          "foreground": "#0c0e15",
+          "foreground": "#08090c",
           "options": {
             "folder_separator_icon": " / ",
             "max_depth": 2,
@@ -44,7 +44,7 @@
           "type": "git",
           "style": "diamond",
           "background": "#76d0c1",
-          "foreground": "#0c0e15",
+          "foreground": "#08090c",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#efebbc{{ end }}",
             "{{ if gt .Behind 0 }}#e188b5{{ end }}",
